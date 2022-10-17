@@ -1,0 +1,11 @@
+var sortSentence = function(s) {
+   let wordSplit =s.split(" ") 
+   let orderedsentence=[]
+   for (i=0 ; i<wordSplit.length ;i++)
+       {
+           const idx=wordSplit[i].slice(-1)-1;
+           orderedsentence[idx]=wordSplit[i].slice(0,-1)
+           
+       }
+    return orderedsentence.join(" ")
+};
